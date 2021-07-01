@@ -19,14 +19,17 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_bio"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="5dp">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
 
             <ImageView
                 android:layout_width="20dp"
@@ -38,9 +41,11 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
 
             <ImageView
                 android:layout_width="20dp"
@@ -52,9 +57,11 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
 
             <ImageView
                 android:layout_width="20dp"
@@ -66,9 +73,11 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
 
             <ImageView
                 android:layout_width="20dp"
@@ -80,8 +89,11 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp">
 
             <ImageView
                 android:layout_width="20dp"
@@ -132,12 +144,12 @@
         android:id="@+id/rv_songs_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:itemCount="6"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        tools:listitem="@layout/song_item_layout"
         android:layout_below="@+id/ll_social"
-        android:paddingTop="10dp" />
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        tools:itemCount="6"
+        tools:listitem="@layout/song_item_layout" />
 
 
     <de.hdodenhof.circleimageview.CircleImageView
