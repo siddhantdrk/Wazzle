@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="90dp"
     app:cardElevation="5dp"
+    app:cardCornerRadius="0dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginBottom="15dp">
 
@@ -15,7 +16,7 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher_background" />
+            android:src="@drawable/banner" />
 
         <ImageView
             android:id="@+id/iv_play_song"
