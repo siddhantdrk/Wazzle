@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/todo"
         android:src="@drawable/banner" />
 
     <LinearLayout
@@ -35,6 +36,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/todo"
                 android:src="@drawable/ic_twitter" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -51,6 +53,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/todo"
                 android:src="@drawable/ic_youtube" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -67,6 +70,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/todo"
                 android:src="@drawable/ic_spotify" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -83,6 +87,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/todo"
                 android:src="@drawable/ic_instagram" />
         </com.google.android.material.card.MaterialCardView>
 
