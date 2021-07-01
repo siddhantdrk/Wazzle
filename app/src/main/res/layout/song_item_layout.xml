@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_song_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/iv_play_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/img_song_label"
+            android:layout_alignTop="@id/img_song_label"
+            android:layout_alignEnd="@id/img_song_label"
+            android:layout_alignBottom="@id/img_song_label"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_play_circle_outline" />
+
+        <ImageView
+            android:id="@+id/img_banner"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_spotify" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_share_24" />
+
+        <TextView
+            android:id="@+id/tv_song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@id/img_banner"
+            android:layout_toEndOf="@+id/img_song_label"
+            android:text="Float"
+            android:textColor="?android:textColorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_song_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@id/img_banner"
+            android:layout_toEndOf="@+id/img_song_label"
+            android:text="Scarlet"
+            android:textColor="?android:textColorPrimary" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/song_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleY="2"
+            android:thumbTint="@android:color/transparent"
+            android:layout_below="@+id/tv_artist_name"
+            android:layout_toStartOf="@id/img_banner"
+            android:layout_toEndOf="@+id/img_song_label" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
