@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Wazzle</string>
     <string name="todo">TODO</string>
+    <string name="austin">Austin</string>
+    <string name="singing_makes_me_happy">Singing makes me happy</string>
+    <string name="scarlett">Scarlett</string>
 </resources>

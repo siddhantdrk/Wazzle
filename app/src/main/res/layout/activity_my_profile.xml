@@ -104,6 +104,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/todo"
                 android:src="@drawable/ic_soundcloud" />
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
@@ -115,12 +116,12 @@
         android:layout_below="@id/tv_user_name"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:drawableStart="@drawable/ic_baseline_location_on_24"
         android:drawablePadding="5dp"
         android:gravity="center"
-        android:text="Austin"
+        android:text="@string/austin"
         android:textColor="?android:textColorPrimary"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
 
     <TextView
         android:id="@+id/tv_bio"
@@ -129,7 +130,7 @@
         android:layout_below="@id/tv_user_location"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="Singing makes me happy"
+        android:text="@string/singing_makes_me_happy"
         android:textColor="?android:textColorPrimary" />
 
     <TextView
@@ -139,7 +140,7 @@
         android:layout_below="@id/iv_profile_pic"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Scarlett"
+        android:text="@string/scarlett"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="?android:textColorPrimary"
         android:textStyle="bold" />
