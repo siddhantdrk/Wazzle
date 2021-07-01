@@ -156,6 +156,7 @@
         android:id="@+id/iv_profile_pic"
         android:layout_width="96dp"
         android:layout_height="96dp"
+        android:elevation="8dp"
         android:layout_below="@id/iv_profile_cover"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-50dp"
