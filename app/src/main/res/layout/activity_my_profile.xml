@@ -179,7 +179,6 @@
                 android:layout_height="wrap_content"
                 android:enabled="false"
                 android:clickable="false"
-                android:focusableInTouchMode="false"
                 android:paddingBottom="24dp"
                 android:textSize="14sp"
                 android:cursorVisible="false"
@@ -342,36 +341,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:enabled="false"
+                android:paddingBottom="24dp"
                 android:clickable="false"
-                android:textSize="14sp"
                 android:cursorVisible="false"
+                android:textSize="14sp"
                 android:drawableEnd="@drawable/ic_baseline_menu_book_24"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:longClickable="false"
                 android:text="In Search of Lost Time" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txt_top_book2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_top_book1"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tv_top_book2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:drawableEnd="@drawable/ic_baseline_menu_book_24"
-                android:enabled="false"
-                android:focusable="false"
-                android:text="Think and Grow Rich."
-                android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
