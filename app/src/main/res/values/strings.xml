@@ -4,4 +4,11 @@
     <string name="austin">Austin</string>
     <string name="singing_makes_me_happy">Singing makes me happy</string>
     <string name="scarlett">Scarlett</string>
+    <string name="number">Number</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="profession_s">Profession(s)</string>
+    <string name="birthday_zodiac"><![CDATA[Birthday & Zodiac Sign]]></string>
+    <string name="favorite_quote">Favorite Quote</string>
+    <string name="top_books">Top Books</string>
 </resources>
