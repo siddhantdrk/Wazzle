@@ -176,8 +176,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="false"
+                android:cursorVisible="false"
                 android:drawableEnd="@drawable/ic_phone"
                 android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:longClickable="false"
                 android:text="(269)-748-9882" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -198,8 +201,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="false"
+                android:cursorVisible="false"
                 android:drawableEnd="@drawable/ic_email"
                 android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:longClickable="false"
                 android:text="abc@gmail.com" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -219,8 +225,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="false"
+                android:cursorVisible="false"
                 android:drawableEnd="@drawable/ic_web"
                 android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:longClickable="false"
                 android:text="www.google.com" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -240,8 +249,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="false"
+                android:cursorVisible="false"
                 android:drawableEnd="@drawable/ic_business"
                 android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:longClickable="false"
                 android:text="Blogger" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -261,8 +273,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="false"
+                android:cursorVisible="false"
                 android:drawableEnd="@drawable/ic_cake"
                 android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:longClickable="false"
                 android:text="1/1/2001 ♎" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -282,8 +297,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="false"
+                android:cursorVisible="false"
                 android:drawableEnd="@drawable/ic_baseline_favorite_border_24"
                 android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:longClickable="false"
                 android:text="Love For All, Hatred For None." />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -304,8 +322,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="false"
+                android:cursorVisible="false"
                 android:drawableEnd="@drawable/ic_baseline_menu_book_24"
                 android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:longClickable="false"
                 android:text="In Search of Lost Time" />
 
         </com.google.android.material.textfield.TextInputLayout>
