@@ -49,34 +49,6 @@
             android:textColor="?android:textColorPrimary"
             android:textStyle="bold" />
 
-        <FrameLayout
-            android:id="@+id/frame_profile_pic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/iv_profile_cover"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="-50dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/iv_edit_profile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right|bottom"
-                android:src="@drawable/ic_edit" />
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/iv_profile_pic"
-                android:layout_width="102dp"
-                android:layout_height="102dp"
-                android:elevation="5dp"
-                android:padding="5dp"
-                android:src="@drawable/account" />
-        </FrameLayout>
-
         <ImageView
             android:id="@+id/iv_profile_cover"
             android:layout_width="match_parent"
@@ -195,7 +167,6 @@
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
 
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_songs_list"
             android:layout_width="match_parent"
@@ -208,15 +179,6 @@
             tools:itemCount="6"
             tools:listitem="@layout/song_item_layout" />
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/save"
-            app:backgroundTint="@color/teal_700"
-            android:layout_marginRight="20dp"
-            android:layout_below="@id/txt_top_book1" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txt_number"
@@ -364,5 +326,43 @@
                 android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_profile_cover"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/ic_edit" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile_pic"
+                android:layout_width="102dp"
+                android:padding="5dp"
+                android:layout_height="102dp"
+                android:elevation="5dp"
+                android:src="@drawable/account" />
+        </FrameLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/save"
+            app:backgroundTint="@color/teal_700"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/txt_top_book1" />
     </RelativeLayout>
 </ScrollView>
