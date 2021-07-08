@@ -11,4 +11,7 @@
     <string name="birthday_zodiac"><![CDATA[Birthday & Zodiac Sign]]></string>
     <string name="favorite_quote">Favorite Quote</string>
     <string name="top_books">Top Books</string>
+    <string name="social_link">Social link</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>
