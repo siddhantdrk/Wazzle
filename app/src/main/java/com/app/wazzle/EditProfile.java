@@ -10,10 +10,13 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.opengl.Visibility;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.activity.result.ActivityResult;
@@ -24,17 +27,15 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.core.content.FileProvider;
 
 import com.google.android.material.textfield.TextInputEditText;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
+import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class EditProfile extends AppCompatActivity {
+public class EditProfile extends AppCompatActivity implements
+        AdapterView.OnItemSelectedListener {
 
     int TWITTER = 0;
     int YOUTUBE = 1;
@@ -43,9 +44,7 @@ public class EditProfile extends AppCompatActivity {
     int SOUNCLOUD = 4;
     int CAMER_PERMISSION_REQUEST_CODE = 101;
     int GALLERY_PERMISSION_REQUEST_CODE = 102;
-    int GALLERY_PICTURE_INTENT = 11;
-    int CAMERA_PICTURE_INTENT = 12;
-
+    Spinner spin;
     String photoType;
     ImageView iv_profile_cover;
     CircleImageView iv_profile_pic;
@@ -88,6 +87,37 @@ public class EditProfile extends AppCompatActivity {
             showSocialLinkInputDialog(SOUNCLOUD);
         });
 
+        spin = findViewById(R.id.color_spinner);
+        spin.setOnItemSelectedListener(this);
+
+        ArrayList<String> colors = new ArrayList<>();
+        colors.add("#FF0000");
+        colors.add("#00FFFF");
+        colors.add("#0000FF");
+        colors.add("#00008B");
+        colors.add("#ADD8E6");
+        colors.add("#800080");
+        colors.add("#FFFF00");
+        colors.add("#00FF00");
+        colors.add("#FF00FF");
+        colors.add("#FFC0CB");
+        colors.add("#808080");
+        CustomAdapter aa = new CustomAdapter(this, android.R.layout.simple_spinner_item, colors);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spin.setAdapter(aa);
+
+        findViewById(R.id.add_more_fav_book).setOnClickListener(view -> {
+            if (findViewById(R.id.txt_top_book2).getVisibility() == View.GONE) {
+                findViewById(R.id.txt_top_book2).setVisibility(View.VISIBLE);
+            } else if (findViewById(R.id.txt_top_book3).getVisibility() == View.GONE) {
+                findViewById(R.id.txt_top_book3).setVisibility(View.VISIBLE);
+                findViewById(R.id.add_more_fav_book).setVisibility(View.GONE);
+            } else if (findViewById(R.id.txt_top_book2).getVisibility() == View.VISIBLE
+                    && findViewById(R.id.txt_top_book3).getVisibility() == View.VISIBLE) {
+                Toast.makeText(EditProfile.this,
+                        "You can only add maximum 3 books", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     void showSocialLinkInputDialog(int socialType) {
@@ -253,5 +283,15 @@ public class EditProfile extends AppCompatActivity {
                 MediaStore.ACTION_IMAGE_CAPTURE);
         cameraActivityResultLauncher.launch
                 (intent);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
     }
 }

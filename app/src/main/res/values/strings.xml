@@ -10,8 +10,14 @@
     <string name="profession_s">Profession(s)</string>
     <string name="birthday_zodiac"><![CDATA[Birthday & Zodiac Sign]]></string>
     <string name="favorite_quote">Favorite Quote</string>
+    <string name="favorite_color">Favorite Color</string>
     <string name="top_books">Top Books</string>
+    <string name="top_books1">Top Books 1</string>
+    <string name="top_books2">Top Books 2</string>
+    <string name="top_books3">Top Books 3</string>
     <string name="social_link">Social link</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="colors">Colors</string>
+    <string name="add_more">Add More</string>
 </resources>

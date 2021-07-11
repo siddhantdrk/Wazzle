@@ -12,7 +12,6 @@
         tools:context=".MyProfile">
 
 
-
         <ImageView
             android:id="@+id/iv_profile_cover"
             android:layout_width="match_parent"
@@ -25,8 +24,8 @@
             android:id="@+id/iv_edit_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="16dp"
             android:layout_alignParentEnd="true"
+            android:padding="16dp"
             android:src="@drawable/ic_edit"
             app:tint="@color/white" />
 
@@ -161,6 +160,17 @@
             android:textColor="?android:textColorPrimary"
             android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/txt_top_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_fav_caolor"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/top_books"
+            android:textSize="12sp" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_songs_list"
             android:layout_width="match_parent"
@@ -173,17 +183,18 @@
             tools:itemCount="6"
             tools:listitem="@layout/song_item_layout" />
 
+
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:id="@+id/txt_number"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/ll_social"
-            android:focusableInTouchMode="false"
-            android:clickable="false"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
             android:hint="@string/number">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -191,19 +202,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="false"
-                android:enabled="false"
-                android:textSize="14sp"
-                android:focusableInTouchMode="false"
                 android:drawableEnd="@drawable/ic_phone"
+                android:enabled="false"
                 android:focusable="false"
-                android:text="(269)-748-9882" />
+                android:focusableInTouchMode="false"
+                android:text="(269)-748-9882"
+                android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:id="@+id/txt_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_number"
@@ -216,18 +226,18 @@
                 android:id="@+id/tv_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:enabled="false"
                 android:clickable="false"
-                android:textSize="14sp"
                 android:drawableEnd="@drawable/ic_email"
+                android:enabled="false"
                 android:focusable="false"
-                android:text="abc@gmail.com" />
+                android:text="abc@gmail.com"
+                android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:id="@+id/txt_website"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_email"
@@ -241,17 +251,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="false"
-                android:textSize="14sp"
-                android:enabled="false"
                 android:drawableEnd="@drawable/ic_web"
+                android:enabled="false"
                 android:focusable="false"
-                android:text="www.google.com" />
+                android:text="www.google.com"
+                android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:id="@+id/txt_profession"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_website"
@@ -264,18 +274,18 @@
                 android:id="@+id/tv_profession"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
                 android:clickable="false"
-                android:enabled="false"
                 android:drawableEnd="@drawable/ic_business"
+                android:enabled="false"
                 android:focusable="false"
-                android:text="Blogger" />
+                android:text="Blogger"
+                android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:id="@+id/text_birthday"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_profession"
@@ -288,18 +298,18 @@
                 android:id="@+id/tv_birthday_zodiac"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:enabled="false"
                 android:clickable="false"
-                android:textSize="14sp"
                 android:drawableEnd="@drawable/ic_cake"
+                android:enabled="false"
                 android:focusable="false"
-                android:text="1/1/2001 ♎" />
+                android:text="1/1/2001 ♎"
+                android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:id="@+id/txt_favorite_quote"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_birthday"
@@ -312,29 +322,42 @@
                 android:id="@+id/tv_fav_quote"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:enabled="false"
                 android:clickable="false"
-                android:textSize="14sp"
                 android:drawableEnd="@drawable/ic_baseline_favorite_border_24"
+                android:enabled="false"
                 android:focusable="false"
-                android:text="Love For All, Hatred For None." />
+                android:text="Love For All, Hatred For None."
+                android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/txt_top_book"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_fav_caolor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_favorite_quote"
-            android:textSize="12sp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
-            android:text="@string/top_books" />
+            android:hint="@string/favorite_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tv_fav_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:drawableEnd="@drawable/ic_baseline_color_lens_24"
+                android:enabled="false"
+                android:focusable="false"
+                android:text="#808080"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:id="@+id/txt_top_book1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_top_book"
@@ -347,33 +370,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="false"
-                android:textSize="14sp"
-                android:enabled="false"
                 android:drawableEnd="@drawable/ic_baseline_menu_book_24"
+                android:enabled="false"
                 android:focusable="false"
-                android:text="In Search of Lost Time" />
+                android:text="In Search of Lost Time"
+                android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:id="@+id/txt_top_book2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_top_book1"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tv_top_book2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:enabled="false"
                 android:clickable="false"
-                android:text="Think and Grow Rich."
                 android:drawableEnd="@drawable/ic_baseline_menu_book_24"
+                android:enabled="false"
                 android:focusable="false"
+                android:text="Think and Grow Rich."
                 android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -410,6 +433,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="-50dp"
             android:elevation="8dp"
+            android:scaleType="centerCrop"
+            app:civ_border_width="5dp"
+            app:civ_border_color="@color/white"
             android:src="@drawable/account" />
     </RelativeLayout>
 </ScrollView>
