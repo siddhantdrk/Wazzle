@@ -90,19 +90,32 @@ public class EditProfile extends AppCompatActivity implements
         spin = findViewById(R.id.color_spinner);
         spin.setOnItemSelectedListener(this);
 
-        ArrayList<String> colors = new ArrayList<>();
-        colors.add("#FF0000");
-        colors.add("#00FFFF");
-        colors.add("#0000FF");
-        colors.add("#00008B");
-        colors.add("#ADD8E6");
-        colors.add("#800080");
-        colors.add("#FFFF00");
-        colors.add("#00FF00");
-        colors.add("#FF00FF");
-        colors.add("#FFC0CB");
-        colors.add("#808080");
-        CustomAdapter aa = new CustomAdapter(this, android.R.layout.simple_spinner_item, colors);
+        ArrayList<String> colorsName = new ArrayList<>();
+        colorsName.add("White");
+        colorsName.add("Black");
+        colorsName.add("Grey");
+        colorsName.add("Yellow");
+        colorsName.add("Red");
+        colorsName.add("Blue");
+        colorsName.add("Green");
+        colorsName.add("Brown");
+        colorsName.add("Pink");
+        colorsName.add("Orange");
+        colorsName.add("Pruple");
+
+        ArrayList<String> colorsCode = new ArrayList<>();
+        colorsCode.add("#FFFFFFFF");
+        colorsCode.add("#000000");
+        colorsCode.add("#808080");
+        colorsCode.add("#FFFF00");
+        colorsCode.add("#ff0000");
+        colorsCode.add("#00008B");
+        colorsCode.add("#00ff00");
+        colorsCode.add("#964B00");
+        colorsCode.add("#FFC0CB");
+        colorsCode.add("#FFA500");
+        colorsCode.add("#800080");
+        CustomAdapter aa = new CustomAdapter(this, android.R.layout.simple_spinner_item, colorsName, colorsCode);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spin.setAdapter(aa);
 

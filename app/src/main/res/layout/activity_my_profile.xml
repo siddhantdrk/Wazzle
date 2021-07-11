@@ -339,6 +339,7 @@
             android:layout_below="@+id/txt_favorite_quote"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
+            app:endIconDrawable="@drawable/color_end"
             android:layout_marginRight="20dp"
             android:hint="@string/favorite_color">
 
@@ -347,10 +348,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="false"
-                android:drawableEnd="@drawable/ic_baseline_color_lens_24"
+                android:drawableEnd="@drawable/color_end"
                 android:enabled="false"
                 android:focusable="false"
-                android:text="#808080"
+                android:text="Black"
                 android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>

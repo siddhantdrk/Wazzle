@@ -16,11 +16,12 @@ import java.util.List;
 
 public class CustomAdapter extends ArrayAdapter<String> {
 
+    private final ArrayList<String> colorsName;
     LayoutInflater flater;
 
-    public CustomAdapter(Activity context, int resouceId, ArrayList<String> list) {
+    public CustomAdapter(Activity context, int resouceId, ArrayList<String> list, ArrayList<String> colorsName) {
         super(context, resouceId, list);
-//        flater = context.getLayoutInflater();
+        this.colorsName = colorsName;
     }
 
     @Override
@@ -52,7 +53,7 @@ public class CustomAdapter extends ArrayAdapter<String> {
             holder = (viewHolder) rowview.getTag();
         }
         holder.color_code.setText(rowItem);
-        holder.color_.setBackgroundColor(Color.parseColor(rowItem));
+        holder.color_.setBackgroundColor(Color.parseColor(colorsName.get(position)));
 
         return rowview;
     }
