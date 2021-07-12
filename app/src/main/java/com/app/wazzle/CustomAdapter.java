@@ -7,12 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.core.content.ContextCompat;
-
 import java.util.ArrayList;
-import java.util.List;
 
 public class CustomAdapter extends ArrayAdapter<String> {
 
@@ -53,12 +51,13 @@ public class CustomAdapter extends ArrayAdapter<String> {
             holder = (viewHolder) rowview.getTag();
         }
         holder.color_code.setText(rowItem);
-        holder.color_.setBackgroundColor(Color.parseColor(colorsName.get(position)));
+        holder.color_.setColorFilter(Color.parseColor(colorsName.get(position)));
 
         return rowview;
     }
 
     private class viewHolder {
-        TextView color_code, color_;
+        TextView color_code;
+        ImageView color_;
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingRight="8dp"
@@ -16,13 +17,13 @@
         android:text="Black"
         android:textColor="@color/black" />
 
-    <TextView
+    <ImageView
         android:id="@+id/color_"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingRight="10dp"
-        android:layout_weight="0.05"
-        android:background="#000" />
+        android:layout_weight="0.08"
+        android:src="@drawable/color_end" />
 
 </LinearLayout>
